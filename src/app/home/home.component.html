@@ -1,0 +1,42 @@
+<p>home works!</p>
+<hr/>
+<label>ID</label><br/>
+<input [(ngModel)]='ID' disabled style="text-align: center;" /><br/><br/>
+
+<label>Firstname</label><br/>
+<input [(ngModel)]='Firstname' /><br/><br/>
+
+<label>Lastname</label><br/>
+<input [(ngModel)]='Lastname' /><br/><br/>
+
+<label>Class Room</label><br/>
+<input [(ngModel)]='ClassRoom' /><br/><br/>
+
+<button (click)='addStudent()'>Confirm</button>
+<!-- <br/><br/>
+<hr/>
+<ul>
+    <li *ngFor='let l of list'>ID : {{l.id}}, Name : {{l.name}}</li>
+</ul><br/>
+<table border="1">
+    <thead>
+        <tr>
+            <th>#No</th>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let l of list; let I = index'>
+            <td>{{I + 1}}</td>
+            <td>{{l.id}}</td>
+            <td>{{l.name}}</td>
+        </tr>
+    </tbody>
+</table> -->
+<hr/>
+<ul>
+    <li *ngFor='let student of studentCollection'>
+        ID : {{student.id}}, Firstname: {{student.firstname}}, Lastname: {{student.lastname}}, Student : {{student.classRoom}}
+    </li>
+</ul>

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fir-course-4608c": {
+      "hosting": {
+        "learnFirebase": [
+          "fir-course-4608c"
+        ]
+      }
+    }
+  }
+}
