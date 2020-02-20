@@ -70,16 +70,16 @@ export class HomeComponent implements OnInit {
   //   console.log(this.list);
   // }
 
-  addStudent() {
+  async addStudent() {
     const data = {
       id: this.ID,
       firstname: this.Firstname,
       lastname: this.Lastname,
       classRoom: this.ClassRoom
     };
-    this.firestore.collection('students').doc(String(this.ID)).set(data);
+    await this.firestore.collection('students').doc(String(this.ID)).set(data);
 
-    this.initData();
+    await this.initData();
 
     this.Firstname = '';
     this.Lastname = '';
